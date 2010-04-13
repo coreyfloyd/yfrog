@@ -1,0 +1,231 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_LOGIN DIALOGEX 0, 0, 248, 60
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Login to DarQroom..."
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_LOGIN,66,4,178,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PASSWORD,66,22,178,14,ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Login",IDOK,73,42,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,125,42,50,14
+    PUSHBUTTON      "Forgot password?",IDC_FORGOT_PASSSWORD,177,42,67,14
+    RTEXT           "Username/Email:",IDC_STATIC,4,7,58,8
+    RTEXT           "Password:",IDC_STATIC,4,25,58,8
+END
+
+IDD_PROGRESS DIALOGEX 0, 0, 276, 58
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Upload Files To ImageShack"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    PUSHBUTTON      "Cancel",IDCANCEL,221,40,50,14,WS_DISABLED
+    LTEXT           "bzz.jpg (x of XX)",IDC_PROGRESS_MESSAGE,66,4,205,8
+    CONTROL         "",IDC_PROGRESS,"msctls_progress32",WS_BORDER,66,16,205,14
+    LTEXT           "Sent: x KB of XXX Mb",IDC_BYTES_SENT,66,34,147,8
+    LTEXT           "",ID_PREVIEW,2,4,53,50
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_NO_THUMB            BITMAP                  "no_thumb.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_LOGIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 244
+        VERTGUIDE, 62
+        VERTGUIDE, 66
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 56
+    END
+
+    IDD_PROGRESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 271
+        VERTGUIDE, 55
+        VERTGUIDE, 66
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 54
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_LOGO                ICON                    "frog.ico"
+IDI_LOGIN               ICON                    "Login.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_TOOLTIP_YOUR_LOGIN  "Your username or email."
+    IDS_TOOLTIP_ENTER_PASSWORD "Enter password here."
+    IDS_ENTER_LOGIN         "Enter username or email please."
+    IDS_ENTER_PASSWORD      "Enter password please."
+    IDS_LOGIN_FAILED        "Login failed!"
+    IDS_LOGIN_FAILED_TITLE  "Login to ImageShack..."
+    IDS_WRONG_CREDENTIALS   "Invalid login or password specified."
+    IDS_RETRY_FILE_OPEN     "Cannot open file: %s\nRetry?"
+    IDS_RETRY_FILE_UPLOAD   "Cannot upload file: %s\nRetry?"
+    IDS_RETRY_FILE_TITLE    "Upload error..."
+    IDS_UPLOADING           "Uploading"
+    IDS_LOGIN_TO            "Login to %domain%"
+    IDS_UPLOADING_TO        "Uploading files to %domain% (Version: %version%)"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PROGRESS_MESSAGE_FORMAT "%s: %s"
+    IDS_PROGRESS_MESSAGE_MULTI_FORMAT "%s: %s (%i of %i)"
+    IDS_BYTES_SENT_FORMAT   "Sent: %s of %s"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PROJNAME            "ImageShackAPI"
+    IDS_IMAGE_SHACK         "ImageShack®"
+    IDS_DOMAIN              "imageshack.us"
+    IDS_IMAGE_SHACK_ULR     "http://www.imageshack.us/"
+    IDS_MY_IMAGES_URL       "http://my.imageshack.us/v_images.php"
+    IDS_UPLOAD_API_URL      "http://www.imageshack.us/upload_api.php"
+    IDS_MULTI_IMAGES_URL    "http://my.imageshack.us/toolbar/pictures.php"
+    IDS_POST_TO_BLOG_URL    "http://blogpost.imageshack.us/blogpost/postblog.php?id="
+    IDS_IMAGE_SHACK_SLIDESHOW_URL 
+                            "http://www.imageshack.us/slideshow/import.php"
+    IDS_LOGIN_URL           "http://profile.imageshack.us/registration/setlogin.php?login="
+    IDS_LOGOUT_URL          "http://profile.imageshack.us/registration/logout.php"
+    IDS_LOGIN_API_URL       "http://www.imageshack.us/auth.php"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_VIDEO_UPLOAD_API_URL "http://vid.imageshack.us/upload_api.php"
+    IDS_RENDER_API_URL      "http://render.imageshack.us/upload_api.php"
+    IDS_NOTHUMB_URL         "http://www.imageshack.us/images/thumbnail.gif"
+    IDS_MY_VIDEOS_URL       "http://my.imageshack.us/video/my_videos.php"
+    IDS_SEARCH_URL          "http://profile.imageshack.us/search.php?q="
+    IDS_FORGOT_PASSWORD     "http://my.imageshack.us/registration/passwordrecovery.php"
+    IDS_IMAGESHACK_SERVERS  "www.imageshack.us"
+    IDS_IMAGESHACK_SERVERS2 "imageshack.us"
+    IDS_UPLOAD_SERVER_URL_FORMAT "load%i.imageshack.us"
+    IDS_IMAGESHACK_VIDEO_SERVERS "vid.imageshack.us"
+    IDS_IMAGESHACK_VIDEO_SERVERS_FORMAT "vid%i.imageshack.us"
+    IDS_IMAGESHACK_RENDER_SERVERS "render.imageshack.us"
+    IDS_IMAGESHACK_RENDER_SERVERS_FORMAT "render%i.imageshack.us"
+    IDS_MY_SERVERS          "my.imageshack.us"
+    IDS_PROFILE_SERVERS     "profile.imageshack.us"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_IMAGE_FILTER        "Images|*.jpg;*.jpeg;*.png;*.gif;*.bmp;*.tif;*.tiff||"
+    IDS_VIDEO_FILTER        "Video|*.flv;*.mpg;*.mpeg;*.mpe;*.avi;*.3gp;*.3g2;*.mov;*.mp4;*.m4a;*.mj2;*.m4v;*.wmv;*.mjpeg;*.vob;*.ogg;*.divx||"
+    IDS_FILES_FILTER        "All supported formats|*.jpg;*.jpeg;*.png;*.gif;*.bmp;*.tif;*.tiff;*.swf;*.flv;*.mpg;*.mpeg;*.mpe;*.avi;*.3gp;*.3g2;*.mov;*.mp4;*.m4a;*.mj2;*.m4v;*.wmv;*.mjpeg;*.vob;*.ogg;*.divx|Images|*.jpg;*.jpeg;*.png;*.gif;*.bmp;*.tif;*.tiff;*.swf|Video|*.flv;*.mpg;*.mpeg;*.mpe;*.avi;*.3gp;*.3g2;*.mov;*.mp4;*.m4a;*.mj2;*.m4v;*.wmv;*.mjpeg;*.vob;*.ogg;*.divx||"
+    IDS_UNSUPPORTED_FILE_TYPE "Unsupported file type"
+    IDS_FILE_IS_TOO_BIG     "File is too big"
+    IDS_NOTHING_TO_UPLOAD   "Nothing to upload"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

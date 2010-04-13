@@ -1,0 +1,289 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\DesktopClient.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\frog.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About DesktopClient"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            128,IDC_STATIC,14,14,20,20
+    LTEXT           "DesktopClient, Version 1.0",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2009 ImageShack",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "OK",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_DESKTOPCLIENT_DIALOG DIALOGEX 0, 0, 344, 318
+STYLE DS_SETFONT | DS_MODALFRAME | DS_SETFOREGROUND | DS_FIXEDSYS | DS_CENTER | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Export to ImageShack"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Add Photos",IDC_ADD_PHOTOS,13,263,50,14
+    CONTROL         "",IDC_PHOTOS,"SysListView32",LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_SHAREIMAGELISTS | LVS_NOCOLUMNHEADER | WS_BORDER | WS_TABSTOP,13,47,96,211
+    EDITTEXT        IDC_EDIT_TAGS,147,47,192,14,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "Scale longest side to:",IDC_CHECK_SCALE,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,133,68,80,10,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_SCALE,215,66,40,14,ES_RIGHT | ES_AUTOHSCROLL | ES_NUMBER | WS_DISABLED
+    CONTROL         "Open My Images When Upload Complete",IDC_CHECK_OPEN_ON_COMPLETE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,4,284,145,10,WS_EX_TRANSPARENT
+    DEFPUSHBUTTON   "Upload",IDOK,231,300,50,14,WS_DISABLED
+    PUSHBUTTON      "Exit",IDCANCEL,288,300,50,14
+    RTEXT           "Logged in as",IDC_STATIC_LOGGED_AS,115,11,165,8,NOT WS_VISIBLE,WS_EX_TRANSPARENT
+    PUSHBUTTON      "Log Out",IDC_LOG_OUT,285,8,50,14,NOT WS_VISIBLE
+    PUSHBUTTON      "Log In",IDC_LOG_IN,285,8,50,14
+    EDITTEXT        IDC_SEARCH_PHOTOS,13,30,96,14,ES_AUTOHSCROLL
+    RTEXT           "Tags:",IDC_STATIC,115,49,19,8,0,WS_EX_TRANSPARENT
+    CTEXT           "Image Preview",IDC_BIG_PREVIEW,135,134,177,102,SS_CENTERIMAGE,WS_EX_TRANSPARENT
+    LTEXT           "Version",IDC_STATIC,278,284,24,8,0,WS_EX_TRANSPARENT
+    LTEXT           "x.x.x.x",IDC_STATIC_VERSION,306,284,25,8,0,WS_EX_TRANSPARENT
+    ICON            IDR_MAINFRAME,IDC_STATIC,13,4,21,20
+    CONTROL         "",IDC_UPLOAD_PROGRESS,"msctls_progress32",NOT WS_VISIBLE | WS_BORDER,4,301,223,13
+    DEFPUSHBUTTON   "Cancel",IDC_CANCEL,231,300,50,14,NOT WS_VISIBLE
+    CONTROL         "public image",IDC_CHECK_PUBLIC,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,133,82,55,10
+    CONTROL         "remove size bar",IDC_CHECK_REMOVE_BAR,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,133,96,67,10
+    CONTROL         129,IDC_STATIC,"Static",SS_BITMAP,5,29,333,1
+    CONTROL         129,IDC_STATIC,"Static",SS_BITMAP,4,280,333,1
+    CONTROL         129,IDC_STATIC,"Static",SS_BITMAP,5,297,333,1
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,1,2
+ PRODUCTVERSION 1,0,1,2
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "ImageShack"
+            VALUE "FileDescription", "ImageShack Demo Desktop Uploader"
+            VALUE "FileVersion", "1.0.1.2"
+            VALUE "InternalName", "DesktopClient.exe"
+            VALUE "LegalCopyright", "(c) 2009 ImageShack. All rights reserved."
+            VALUE "OriginalFilename", "DesktopClient.exe"
+            VALUE "ProductName", "ImageShack Demo Desktop Uploader"
+            VALUE "ProductVersion", "1.0.1.2"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_DESKTOPCLIENT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 339
+        VERTGUIDE, 13
+        VERTGUIDE, 109
+        VERTGUIDE, 115
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 315
+        HORZGUIDE, 30
+        HORZGUIDE, 47
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_LINE                BITMAP                  "res\\line.bmp"
+IDB_NO_THUMB            BITMAP                  "res\\no_thumb.bmp"
+IDB_NO_THUMB_BIG        BITMAP                  "res\\no_thumb_big.bmp"
+IDB_EMPTY_THUMB_BIG     BITMAP                  "res\\empty_thumb_big.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_CONTEXTMENU MENU 
+BEGIN
+    POPUP "FOLDER"
+    BEGIN
+        MENUITEM "Create New Folder",           ID_CREATE_NEW_FOLDER
+    END
+    POPUP "SUBFOLDER"
+    BEGIN
+        MENUITEM "Create Subfolder",            32773
+    END
+    POPUP "PORTFOLIO"
+    BEGIN
+        MENUITEM "Create New Portfolio",        ID_CREATE_NEW_PORTFOLIO
+    END
+    POPUP "SUBPORTFOLIO"
+    BEGIN
+        MENUITEM "Create Sub-Portfolio",        ID_CREATE_SUBPORTFOLIO
+    END
+    POPUP "PHOTO"
+    BEGIN
+        MENUITEM "Delete",                      ID_PHOTO_DELETE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About DesktopClient..."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FILE_FILTER         "All supported formats|*.jpg;*.jpeg;*.png;*.gif;*.bmp;*.tif;*.tiff;*.swf;*.flv;*.mpg;*.mpeg;*.mpe;*.avi;*.3gp;*.3g2;*.mov;*.mp4;*.m4a;*.mj2;*.m4v;*.wmv;*.mjpeg;*.vob;*.ogg;*.divx|Images|*.jpg;*.jpeg;*.png;*.gif;*.bmp;*.tif;*.tiff;*.swf|Video|*.flv;*.mpg;*.mpeg;*.mpe;*.avi;*.3gp;*.3g2;*.mov;*.mp4;*.m4a;*.mj2;*.m4v;*.wmv;*.mjpeg;*.vob;*.ogg;*.divx||"
+    IDS_SUPPORTED_FORMATS   "*.jpg;*.jpeg;*.png;*.gif;*.bmp;*.tif;*.tiff;*.swf;*.flv;*.mpg;*.mpeg;*.mpe;*.avi;*.3gp;*.3g2;*.mov;*.mp4;*.m4a;*.mj2;*.m4v;*.wmv;*.mjpeg;*.vob;*.ogg;*.divx;"
+    IDS_LOGGED_IN_AS_FORMAT "Logged in as %s"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\DesktopClient.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
